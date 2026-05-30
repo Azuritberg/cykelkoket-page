@@ -18,17 +18,11 @@ export function getPosts() {
   return fetchFromWordPress("/posts")
 }
 
-export function getMedia() {
-  return fetchFromWordPress("/media")
-}
-
-export function getPageBySlug(slug) {
-  return fetchFromWordPress(`/pages?slug=${slug}`)
-}
-
 export function getFAQs() {
   return fetchFromWordPress("/faq")
 }
+
+
 
 // export function getEvents() {
 //   return fetchFromWordPress("/events")
@@ -36,4 +30,15 @@ export function getFAQs() {
 
 // export function getOpeningHours() {
 //   return fetchFromWordPress("/opening-hours")
+// }
+
+
+// export function getMedia() {
+//   return fetchFromWordPress("/media")
+// }
+
+
+
+// export function getPageBySlug(slug) {
+//   return fetchFromWordPress(`/pages?slug=${slug}`)
 // }
