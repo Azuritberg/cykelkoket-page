@@ -26,7 +26,9 @@ function Home() {
             
             {/* <TestWordPress /> */}
             
-            <MobileWorkshop />
+            <EventCalendar />
+
+            {/* <MobileWorkshop /> */}
 
             <Footer />
           </section>
@@ -34,8 +36,9 @@ function Home() {
           <section className="grid gap-3">
             <OpeningStatus />
             <InfoCards />
+            <MobileWorkshop />
             {/* <Membership /> */}
-            <EventCalendar />
+            {/* <EventCalendar /> */}
             <FAQ />
           </section>
         </div>

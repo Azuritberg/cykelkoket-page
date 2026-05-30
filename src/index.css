@@ -50,6 +50,15 @@ a {
   cursor: pointer;
 }
 
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE och Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
 /* .arrow-icon {
   display: inline-block;
   transition: transform 0.3s ease;

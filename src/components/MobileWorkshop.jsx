@@ -1,63 +1,134 @@
 import { Link } from "react-router"
 
-import tools from "../assets/tools.png"
-
 function MobileWorkshop() {
-  const workshops = ["Punkafix", "Bromsar", "Växlar", "Hjulriktning"]
-
   return (
     <section
       id="mobila-verkstaden"
-      className="relative min-h-[360px] overflow-hidden rounded-2xl bg-[var(--surface-dark)] px-10 py-10 text-[var(--text-light)] md:px-12"
+      className="flex h-full flex-col justify-center rounded-2xl bg-[var(--pink)] p-10 text-black"
     >
-      <div className="relative z-10 flex h-full min-h-[280px] flex-col justify-between">
-        <div>
-          <h2 className="text-5xl font-black uppercase leading-none tracking-tight md:text-6xl">
+      <div className="max-w-md">
+        <h2 className="text-6xl font-black uppercase leading-none tracking-tight">
+          <span className="block text-[var(--surface)]">
             Mobila
-            <span className="block text-[var(--lime)]">Verkstaden</span>
-          </h2>
+          </span>
 
-          <p className="mt-5 max-w-md text-base leading-relaxed text-white/80">
-            Vi kommer till er. Boka oss till er arbetsplats, <br />skola, förening
-            eller event.
-          </p>
+          <span className="block text-black">
+            Verkstaden
+          </span>
+        </h2>
 
-          <Link
-            to="/mobila-verkstaden"
-            className="mt-7 inline-block rounded-xl bg-[var(--pink)] px-7 py-4 font-black uppercase text-black transition duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_var(--pink)]"
-          >
-            Läs mer & boka
-          </Link>
-          {/* <button className="mt-7 rounded-xl bg-[var(--pink)] px-7 py-4 font-black uppercase text-black transition duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_var(--pink)]">
-            Läs mer & boka
-          </button> */}
-        </div>
+        <p className="mt-6 text-lg leading-relaxed text-black/75">
+          Vi kommer till er. Boka oss till er arbetsplats,
+          <br />skola, förening eller event.
+        </p>
 
-        <div className="mt-10">
-          <p className="mb-3 text-sm font-bold">Populära workshops:</p>
-
-          <div className="flex flex-wrap gap-2">
-            {workshops.map((workshop) => (
-              <span
-                key={workshop}
-                className="rounded-full bg-[var(--lime)] px-4 py-2 text-sm font-black uppercase text-black"
-              >
-                {workshop}
-              </span>
-            ))}
-          </div>
-        </div>
+        <Link
+          to="/mobila-verkstaden"
+          className="mt-8 inline-block rounded-xl bg-black px-7 py-5 font-black uppercase text-[var(--surface)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,0,0,0.25)]"
+        >
+          Läs mer & boka
+        </Link>
       </div>
-        <img
-          src={tools}
-          alt=""
-          className="page-decoration absolute right-[-10px] top-[-40px] h-[585px] w-auto object-contain opacity-30"
-        />
     </section>
   )
 }
 
 export default MobileWorkshop
+
+
+
+// import { Link } from "react-router"
+
+// function MobileWorkshop() {
+//   return (
+//     <section
+//       id="mobila-verkstaden"
+//       className="rounded-2xl bg-[var(--pink)] p-10 text-black"
+//     >
+//       <h2 className="text-6xl font-black uppercase leading-none tracking-tight">
+//         Mobila
+//         <span className="block text-[var(--surface)]">Verkstaden</span>
+//       </h2>
+
+//       <p className="mt-6 text-base leading-relaxed text-black/70">
+//         Vi kommer till er. Boka oss till er arbetsplats, skola, förening eller
+//         event.
+//       </p>
+
+//       <Link
+//         to="/mobila-verkstaden"
+//         className="mt-8 inline-block rounded-xl bg-black px-7 py-4 font-black uppercase text-[var(--pink)] transition duration-300 hover:-translate-y-1"
+//       >
+//         Läs mer & boka
+//       </Link>
+//     </section>
+//   )
+// }
+
+// export default MobileWorkshop
+
+
+
+// import { Link } from "react-router"
+
+// import tools from "../assets/tools.png"
+
+// function MobileWorkshop() {
+//   const workshops = ["Punkafix", "Bromsar", "Växlar", "Hjulriktning"]
+
+//   return (
+//     <section
+//       id="mobila-verkstaden"
+//       className="relative min-h-[360px] overflow-hidden rounded-2xl bg-[var(--surface-dark)] px-10 py-10 text-[var(--text-light)] md:px-12"
+//     >
+//       <div className="relative z-10 flex h-full min-h-[280px] flex-col justify-between">
+//         <div>
+//           <h2 className="text-5xl font-black uppercase leading-none tracking-tight md:text-6xl">
+//             Mobila
+//             <span className="block text-[var(--lime)]">Verkstaden</span>
+//           </h2>
+
+//           <p className="mt-5 max-w-md text-base leading-relaxed text-white/80">
+//             Vi kommer till er. Boka oss till er arbetsplats, <br />skola, förening
+//             eller event.
+//           </p>
+
+//           <Link
+//             to="/mobila-verkstaden"
+//             className="mt-7 inline-block rounded-xl bg-[var(--pink)] px-7 py-4 font-black uppercase text-black transition duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_var(--pink)]"
+//           >
+//             Läs mer & boka
+//           </Link>
+//           {/* <button className="mt-7 rounded-xl bg-[var(--pink)] px-7 py-4 font-black uppercase text-black transition duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_var(--pink)]">
+//             Läs mer & boka
+//           </button> */}
+//         </div>
+
+//         <div className="mt-10">
+//           <p className="mb-3 text-sm font-bold">Populära workshops:</p>
+
+//           <div className="flex flex-wrap gap-2">
+//             {workshops.map((workshop) => (
+//               <span
+//                 key={workshop}
+//                 className="rounded-full bg-[var(--lime)] px-4 py-2 text-sm font-black uppercase text-black"
+//               >
+//                 {workshop}
+//               </span>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+//         <img
+//           src={tools}
+//           alt=""
+//           className="page-decoration absolute right-[-10px] top-[-40px] h-[585px] w-auto object-contain opacity-30"
+//         />
+//     </section>
+//   )
+// }
+
+// export default MobileWorkshop
 
 
 
