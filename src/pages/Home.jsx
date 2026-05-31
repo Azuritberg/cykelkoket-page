@@ -14,7 +14,7 @@ import Footer from "../components/Footer"
 
 function Home() {
   return (
-    <main className="min-h-screen bg-[var(--bg)] p-3 text-[var(--text)]">
+    <main className="min-h-screen bg-[var(--bg)] p-3 text-[var(--text)] sm:p-3">
       <div className="mx-auto max-w-[1400px]">
         <div className="grid gap-3 lg:grid-cols-[1.45fr_0.95fr]">  {/* items-start */}
           <section className="grid gap-3">                      {/* content-start */}

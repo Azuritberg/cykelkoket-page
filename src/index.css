@@ -25,9 +25,21 @@
   --heading: "Arial Black", system-ui, sans-serif;
 }
 
-* {
+/* Global sizing */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
 
 body {
   margin: 0;
@@ -39,6 +51,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 

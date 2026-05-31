@@ -27,22 +27,22 @@ function GiftMembership() {
       <div className="mx-auto max-w-[1200px] overflow-hidden rounded-2xl bg-[var(--pink)]">
         <Header />
 
-        <section className="relative overflow-hidden p-10 md:p-16">
+        <section className="relative overflow-hidden p-6 sm:p-10 md:p-16">
           <div className="relative z-10">
-            <h1 className="text-6xl font-black uppercase tracking-tight">
+            <h1 className="text-[clamp(2.5rem,10vw,3.75rem)] font-black uppercase leading-none tracking-tight">
               Ge bort medlemskap
             </h1>
 
-            <p className="mt-8 max-w-2xl text-lg leading-relaxed">
+            <p className="mt-8 max-w-2xl text-base sm:text-lg leading-relaxed">
               Frågar du oss på Cykelköket så är ett medlemskap i Cykelköket världens bästa present, oavsett om det är julklapp, namnsdag, födelsedag eller att din vän bara är värd något fint. Samtidigt vill du inte vill köpa ännu en sak.
               Med ett medlemskap i Cykelköket så får din vän en möjlighet att vara med och skapa ett lite bättre Malmö genom fler hela och lättrullande cyklar. För vem blir inte lycklig av en nyservad lättrullande cykel, när man dessutom gjort det själv!
             </p>
 
-            <p className="mt-8 max-w-2xl text-lg leading-relaxed">
+            <p className="mt-8 max-w-2xl text-base sm:text-lg leading-relaxed">
               Om du vill ge bort ett medlemskap i Cykelköket ska du göra enligt nedan:
             </p>
 
-            <h4 className="mt-12 max-w-2xl text-3xl font-black uppercase leading-tight">
+            <h4 className="mt-12 max-w-2xl text-2xl font-black uppercase leading-tight sm:text-3xl">
               1. Fyll i formuläret
             </h4>
 
@@ -111,7 +111,7 @@ function GiftMembership() {
                 />
               </label>
 
-              <p className="text-base leading-relaxed">
+              <p className="text-base sm:text-lg leading-relaxed">
                 Alla nya medlemmar får ett välkomstmail av oss. För att vi inte ska skicka
                 det innan din vän fått presenten av dig, så vill vi veta när vi tidigast kan
                 skicka vårt välkomstmail. Skriver du inget datum så skickar vi det så snart som möjligt.
@@ -147,11 +147,11 @@ function GiftMembership() {
               </button>
             </form>
 
-            <h4 className="mt-12 max-w-2xl text-3xl font-black uppercase leading-tight">
+            <h4 className="mt-12 max-w-2xl text-2xl font-black uppercase leading-tight sm:text-3xl">
               2. Betala medlemsavgiften
             </h4>
 
-            <p className="mt-4 max-w-2xl text-lg leading-relaxed">
+            <p className="mt-4 max-w-2xl text-base sm:text-lg leading-relaxed">
               <strong>Du kan betala med Swish eller Bankgiro.</strong>{" "}
               <br />Om du inte har möjlighet att betala med Swish <br />eller Bankgiro så kan du
               skicka ett mail till oss
@@ -159,26 +159,44 @@ function GiftMembership() {
               <strong>kassor.cykelkoket@gmail.com</strong>
             </p>
 
-            <p className="mt-4 max-w-2xl text-lg leading-relaxed">
+            <p className="mt-4 max-w-2xl text-base sm:text-lg leading-relaxed">
               <strong>Swish:</strong> Swisha 100 kr till 123 513 39 21.
               <br />
               Uppge namnet på den som ska få medlemskapet.
             </p>
 
-            <p className="mt-4 max-w-2xl text-lg leading-relaxed">
+            <p className="mt-4 max-w-2xl text-base sm:text-lg leading-relaxed">
               <strong>Bankgiro:</strong> Betala 100 kr till 5913-2100.
               <br />Skriv present + namnet på den som ska få medlemskapet.
             </p>
 
-            <h4 className="mt-12 max-w-2xl text-3xl font-black uppercase leading-tight">
+            <h4 className="mt-12 max-w-2xl text-2xl font-black uppercase leading-tight sm:text-3xl">
               3. Välj ett presentkort
             </h4>
 
-            <p className="mt-4 max-w-2xl text-lg leading-relaxed">
+            <p className="mt-4 max-w-2xl text-base sm:text-lg leading-relaxed">
               Skriv ut det presentkort du tycker är finast. <br className="hidden md:block"/>Eller så gör du ett eget presentkort för lite mer personlig touch.
             </p>
 
-            <div className="mt-10 overflow-x-auto pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            <div className="mt-10 -mx-6 overflow-x-auto px-6 pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:-mx-10 sm:px-10 md:-mx-16 md:px-16">
+              <div className="flex w-max items-center gap-0">
+                {giftCards.map((card, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setSelectedCard(card)}
+                    className="group relative shrink-0 bg-transparent p-0 transition duration-300 hover:z-10 hover:-translate-y-2"
+                  >
+                    <img
+                      src={card}
+                      alt={`Presentkort ${index + 1}`}
+                      className="h-[120px] w-[190px] max-w-none object-cover transition duration-300 group-hover:scale-[0.92] group-hover:drop-shadow-[0_0_30px_var(--pink)] sm:h-[150px] sm:w-[240px] md:h-[170px] md:w-[270px] lg:h-[190px] lg:w-[300px]"
+                    />
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* <div className="mt-10 max-w-full overflow-x-auto pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               <div className="flex w-max items-center gap-0">
                 {giftCards.map((card, index) => (
                   <button
@@ -189,20 +207,29 @@ function GiftMembership() {
                     <img
                       src={card}
                       alt={`Presentkort ${index + 1}`}
-                      className="h-[260px] w-auto object-contain transition duration-300 group-hover:scale-[0.9] group-hover:drop-shadow-[0_0_30px_var(--pink)]"
+                      className="h-[120px] w-auto object-contain transition duration-300 group-hover:scale-[0.9] group-hover:drop-shadow-[0_0_30px_var(--pink)]"
                     />
                   </button>
                 ))}
               </div>
-            </div>
+            </div> */}
 
           </div>
 
-          <img
+
+          <div className="page-decoration pointer-events-none absolute bottom-0 right-0 hidden h-full w-[40%] overflow-hidden lg:block">
+            <img
+              src={biker}
+              alt=""
+              className="absolute bottom-[300px] right-[-5px] h-[900px] w-auto max-w-none object-contain opacity-30"
+            />
+          </div>
+
+          {/* <img
             src={biker}
             alt=""
             className="page-decoration pointer-events-none absolute bottom-[160px] right-[-5px] h-[1200px] w-auto object-contain opacity-30"
-          />
+          /> */}
 
           {selectedCard && (
             <div

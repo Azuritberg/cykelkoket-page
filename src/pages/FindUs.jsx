@@ -9,13 +9,13 @@ function FindUs() {
       <div className="mx-auto max-w-[1200px] overflow-hidden rounded-2xl bg-[var(--surface)]">
         <Header />
 
-        <section className="relative overflow-hidden p-10 md:p-16">
+        <section className="relative overflow-hidden p-6 sm:p-10 md:p-16">
           <div className="max-w-4xl">
-            <h1 className="text-6xl font-black uppercase tracking-tight">
+            <h1 className="text-[clamp(2.5rem,10vw,3.75rem)] font-black uppercase leading-none tracking-tight">
               Hitta till oss
             </h1>
 
-            <p className="mt-8 text-lg leading-relaxed text-black/80">
+            <p className="mt-8 text-base sm:text-lg leading-relaxed text-black/80">
               Vår verkstad finns på Augustenborgsgata 24E, Malmö.
               <br className="hidden md:block"/> Här hittar du en karta till oss.
             </p>
@@ -29,7 +29,7 @@ function FindUs() {
               Öppna karta
             </a>
 
-            <p className="mt-12 text-lg leading-relaxed text-black/80">
+            <p className="mt-12 text-base sm:text-lg leading-relaxed text-black/80">
               Vi har öppet på <strong>Måndagar</strong> och{" "}
               <strong>Onsdagar</strong>
               <br className="md:hidden" />
@@ -37,11 +37,11 @@ function FindUs() {
               mellan 17–20.
             </p>
 
-            <p className="mt-12 text-lg leading-relaxed text-black/80">
+            <p className="mt-12 text-base sm:text-lg leading-relaxed text-black/80">
               Men ibland är vi sjuka, upptagna med annat eller öppnar <br className="hidden md:block"/>lite senare. Så ta alltid en titt på vår Facebook-sida innan <br className="hidden md:block"/>du besöker oss.
             </p>
 
-            <p className="mt-6 text-lg leading-relaxed text-black/80">
+            <p className="mt-6 text-base sm:text-lg leading-relaxed text-black/80">
               Där lägger vi upp evenemang för när vi har öppet. Det <br className="hidden md:block"/>händer även att vi håller öppet vid andra tider och dagar, <br className="hidden md:block"/>det postar vi också på Facebook.
             </p>
 
@@ -55,11 +55,20 @@ function FindUs() {
             </a>
           </div>
 
-          <img
+          <div className="page-decoration pointer-events-none absolute bottom-0 right-0 hidden h-full w-[45%] overflow-hidden lg:block">
+            <img
+              src={roadBike}
+              alt=""
+              className="absolute bottom-[0px] right-[0px] h-[800px] w-auto max-w-none object-contain opacity-40"
+            />
+          </div>
+          
+
+          {/* <img
             src={roadBike}
             alt=""
             className="page-decoration pointer-events-none absolute bottom-[-120px] right-[-10px] h-[800px] w-auto object-contain opacity-40"
-          />
+          /> */}
         </section>
       </div>
 

@@ -107,6 +107,117 @@ function Hero() {
 export default Hero
 
 
+
+
+// import { useState } from "react"
+// import { Link } from "react-router"
+// import { motion } from "framer-motion"
+// import onBikes from "../assets/on-bikes.png"
+
+// function Hero() {
+//   const [showOpeningHours, setShowOpeningHours] = useState(false)
+
+//   return (
+//     <>
+//       <section className="relative grid items-center overflow-hidden px-8 pb-8 pt-8 md:grid-cols-2">
+//         <motion.div
+//           className="relative z-20" // flex min-h-[520px] flex-col justify-between --- IGNORE ---
+//           initial={{ opacity: 0, y: 40 }}
+//           animate={{ opacity: 1, y: 0 }}
+//           transition={{ duration: 0.7, ease: "easeOut" }}
+//         >
+//           <h1 className="max-w-[650px] text-6xl font-black uppercase leading-[0.9] tracking-tight md:text-7xl">
+//             <span className="block whitespace-nowrap">Laga själv.</span>
+//             <span className="block whitespace-nowrap text-[var(--pink)]">
+//               Tillsammans.
+//             </span>
+//           </h1>
+
+//           <p className="mt-8 max-w-md text-lg leading-relaxed text-black/80">
+//             Cykelköket är en ideell gör-det-själv verkstad där alla är välkomna
+//             att laga sin cykel med hjälp av verktyg, reservdelar och volontärer.
+//           </p>
+
+//           <div className="mt-8 flex flex-wrap gap-4">
+//             <button
+//               onClick={() => setShowOpeningHours(true)}
+//               className="rounded-xl bg-[var(--lime)] px-7 py-4 font-black uppercase text-black transition duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_var(--lime)]"
+//             >
+//               Se öppettider
+//             </button>
+
+//             <Link
+//               to="/hitta-hit"
+//               className="rounded-xl border-2 border-black px-7 py-4 font-black uppercase transition duration-300 hover:-translate-y-1 hover:bg-black hover:text-white"
+//             >
+//               Hitta hit
+//             </Link>
+//           </div>
+//         </motion.div>
+
+//         <motion.div
+//           className="relative mt-8 h-[420px] md:mt-0"
+//           initial={{ opacity: 0, scale: 0.92, rotate: 2 }}
+//           animate={{ opacity: 1, scale: 1, rotate: 0 }}
+//           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+//         >
+//           <div className="absolute right-10 top-8 h-64 w-64 rounded-full bg-[var(--lime)]"></div>
+
+//           <img
+//             src={onBikes}
+//             alt=""
+//             className="absolute bottom-[-100px] right-[-20px] z-10 h-[500px] w-auto object-contain"
+//           />
+//         </motion.div>
+//       </section>
+
+//       {showOpeningHours && (
+//         <div
+//           onClick={() => setShowOpeningHours(false)}
+//           className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
+//         >
+//           <div
+//             onClick={(event) => event.stopPropagation()}
+//             className="max-w-lg rounded-2xl bg-[var(--surface)] p-8 text-black shadow-2xl"
+//           >
+//             <h2 className="text-4xl font-black uppercase">Öppettider</h2>
+
+//             <p className="mt-6 text-lg leading-relaxed">
+//               Vår verkstad är vanligtvis öppen för medlemmar <strong>Måndagar</strong> och <strong>Onsdagar</strong> 17:00 till 20:00.
+//             </p>
+
+//             <p className="mt-4 text-lg leading-relaxed">
+//               Du kan bli medlem på plats om du inte redan är det. Om vi tvingas
+//               hålla stängt så postar vi det på vår Facebooksida.
+//             </p>
+
+//             <div className="mt-8 flex flex-wrap gap-4">
+//               <a
+//                 href="https://www.facebook.com/cykelkoket"
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="rounded-xl bg-[var(--pink)] px-7 py-4 font-black uppercase text-black transition hover:-translate-y-1 hover:shadow-[0_0_20px_var(--pink)]"
+//               >
+//                 Till Facebook
+//               </a>
+
+//               <button
+//                 onClick={() => setShowOpeningHours(false)}
+//                 className="rounded-xl border-2 border-black px-7 py-4 font-black uppercase transition hover:bg-black hover:text-white"
+//               >
+//                 Stäng
+//               </button>
+//             </div>
+//           </div>
+//         </div>
+//       )}
+//     </>
+//   )
+// }
+
+// export default Hero
+
+
 // import { motion } from "framer-motion"
 // import { Link } from "react-router"
 // import onBikes from "../assets/on-bikes.png"
