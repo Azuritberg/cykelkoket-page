@@ -57,6 +57,10 @@ export default OpeningStatus
 
 
 
+
+// SKRÄP
+
+
 // import racerFixing from "../assets/racer-fixing.png"
 // import { getOpeningStatus } from "../data/openingHours"
 

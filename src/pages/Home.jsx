@@ -38,6 +38,20 @@ function Home() {
 
 export default Home
 
+
+
+
+
+
+
+
+
+
+
+
+
+// SKRÄP
+
 // import Header from "../components/Header"
 // import Hero from "../components/Hero"
 // import OpeningStatus from "../components/OpeningStatus"

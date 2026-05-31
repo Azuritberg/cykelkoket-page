@@ -70,6 +70,12 @@ export default FAQ
 
 
 
+
+
+
+// SKRÄP
+
+
 // import { useState } from "react"
 // import { faqData } from "../data/faqData.js"
 // import { Link } from "react-router"

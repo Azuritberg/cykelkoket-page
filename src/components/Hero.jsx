@@ -111,6 +111,16 @@ function Hero() {
 export default Hero
 
 
+
+
+
+
+
+
+
+// SKRÄP
+
+
 // import { useState } from "react"
 // import { Link } from "react-router"
 // import { motion } from "framer-motion"

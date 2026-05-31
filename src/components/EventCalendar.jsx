@@ -116,6 +116,14 @@ export default EventCalendar
 
 
 
+
+
+
+// SKRÄP
+
+
+
+
 // VERSION 2 - med "visa fler" knapp
 
 // import { useState } from "react"

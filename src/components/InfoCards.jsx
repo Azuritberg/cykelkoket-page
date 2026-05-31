@@ -53,7 +53,7 @@ function InfoCards() {
               key={card.title}
               className={`flex min-w-0 flex-col items-center text-center sm:px-5 ${
                 index !== cards.length - 1
-                  ? "border-b border-dashed border-black/30 pb-6 sm:border-b-0 sm:border-r sm:pb-0"
+                  ? "border-b border-dashed border-black/50 pb-6 sm:border-b-0 sm:border-r sm:pb-0"
                   : ""
               }`}
             >

@@ -72,21 +72,21 @@ a {
   display: none; /* Chrome, Safari */
 }
 
-/* .arrow-icon {
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.arrow-link:hover .arrow-icon {
-  transform: translateX(8px);
-} */
-
 
 @media (max-width: 767px) {
   .page-decoration {
     display: none !important;
   }
 }
+
+
+
+
+
+
+
+
+
 
 /* .torn-bottom {
   position: relative;
