@@ -39,13 +39,13 @@ function EventCalendar() {
 
   return (
     <section className="relative overflow-hidden rounded-2xl bg-[var(--surface-dark)] p-10 text-[var(--text-light)]">
-      <h2 className="text-5xl font-black uppercase leading-none">
+      <h2 className="text-4xl font-black uppercase leading-none">
         <span className="text-white">Nyheter | </span>
         <span className="text-[var(--lime)]">Event</span>
       </h2>
 
       <div className="relative mt-8">
-        <div className="hide-scrollbar max-h-[430px] space-y-4 overflow-y-auto pb-20">
+        <div className="hide-scrollbar max-h-[340px] space-y-4 overflow-y-auto pb-20">
           {events.map((event, index) => {
             const isOpen = openEvent === index
 
@@ -93,8 +93,17 @@ function EventCalendar() {
           })}
         </div>
 
+        {/* Fade upptill */}
+        {/* <div className="pointer-events-none absolute top-0 left-0 h-2 w-full bg-gradient-to-b from-[var(--surface-dark)] via-[var(--surface-dark)]/80 to-transparent" /> */}
+       
+        {/* <div className="pointer-events-none absolute bottom-5 left-1/2 -translate-x-1/2 text-xs font-bold uppercase tracking-wider text-white/50">
+          Fler events ↓
+        </div> */}
+
+        {/* Fade nedtill */}
         <div className="pointer-events-none absolute bottom-0 left-0 h-24 w-full bg-gradient-to-t from-[var(--surface-dark)] via-[var(--surface-dark)]/80 to-transparent" />
       </div>
+      
     </section>
   )
 }
@@ -102,6 +111,12 @@ function EventCalendar() {
 export default EventCalendar
 
 
+
+
+
+
+
+// VERSION 2 - med "visa fler" knapp
 
 // import { useState } from "react"
 // import { ChevronDown } from "lucide-react"
@@ -225,6 +240,7 @@ export default EventCalendar
 
 
 
+// ========================================================
 
 
 
@@ -249,8 +265,7 @@ export default EventCalendar
 
 
 
-
-
+/// SKA slängas
 
 
 

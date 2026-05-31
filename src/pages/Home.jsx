@@ -16,8 +16,8 @@ function Home() {
   return (
     <main className="min-h-screen bg-[var(--bg)] p-3 text-[var(--text)]">
       <div className="mx-auto max-w-[1400px]">
-        <div className="grid gap-3 lg:grid-cols-[1.45fr_0.95fr]">
-          <section className="grid gap-3">
+        <div className="grid gap-3 lg:grid-cols-[1.45fr_0.95fr]">  {/* items-start */}
+          <section className="grid gap-3">                      {/* content-start */}
             <div className="overflow-hidden rounded-2xl bg-[var(--surface)]">
               <Header />
               <Hero />
@@ -33,7 +33,7 @@ function Home() {
             <Footer />
           </section>
 
-          <section className="grid gap-3">
+          <section className="grid gap-3">        {/* content-start */}
             <OpeningStatus />
             <InfoCards />
             <MobileWorkshop />

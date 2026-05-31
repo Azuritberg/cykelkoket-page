@@ -27,16 +27,16 @@ function InfoCards() {
     <section className="rounded-2xl bg-[var(--surface)] px-8 py-8">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center justify-between text-left"
+        className="flex w-full items-center justify-between gap-6 text-left"
       >
-        <h2 className="text-3xl font-black uppercase">
+        <h2 className="text-3xl font-black uppercase leading-none">
           Vad är Cykelköket?
         </h2>
 
         <ChevronDown
           size={36}
           strokeWidth={3}
-          className={`transition-transform duration-300 ${
+          className={`shrink-0 transition-transform duration-300 ${
             isOpen ? "rotate-180" : ""
           }`}
         />
