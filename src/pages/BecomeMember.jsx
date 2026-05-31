@@ -22,20 +22,20 @@ function BecomeMember() {
 
           <p className="mt-8 max-w-2xl text-base sm:text-lg leading-relaxed">
             Cykelköket är en ideell förening som styrs och drivs av oss som är
-            <br className="hidden md:block"/>medlemmar. Vi är beroende av våra medlemmar för att finnas kvar.
+            <br className="hidden md:block"/> medlemmar. Vi är beroende av våra medlemmar för att finnas kvar.
           </p>
 
           <p className="mt-8 max-w-2xl text-base sm:text-lg leading-relaxed">
             Oavsett om du vill engagera dig i Cykelköket eller vara passiv medlem,
-            <br className="hidden md:block"/>du gär ditt stöd viktigt för föreningen.
+            <br className="hidden md:block"/> så är ditt stöd viktigt för föreningen.
           </p>
 
           <p className="mt-8 max-w-2xl text-base sm:text-lg leading-relaxed">
             Som medlem har du möjlighet att vara med och påverka Cykelkökets
-            <br className="hidden md:block"/>verksamhet. Du kan till exempel påverka vilka kurser eller föreläsningar
-            <br className="hidden md:block"/>vi ska arrangera, våra öppettider eller vilka verktyg vi ska köpa in.
+            <br className="hidden md:block"/> verksamhet. Du kan till exempel påverka vilka kurser eller föreläsningar
+            <br className="hidden md:block"/> vi ska arrangera, våra öppettider eller vilka verktyg vi ska köpa in.
             Att <br className="hidden md:block"/>vara medlem kostar bara 100 kr per år och du kan betala med Swish
-            <br className="hidden md:block"/>eller bankgiro.
+            <br className="hidden md:block"/> eller bankgiro.
           </p>
 
           <h4 className="mt-12 max-w-2xl text-2xl font-black uppercase leading-tight sm:text-3xl">
@@ -44,7 +44,7 @@ function BecomeMember() {
 
           <p className="mt-4 max-w-2xl text-base sm:text-lg leading-relaxed">
             <strong>Betala med Swish:</strong> Swisha 100 kr till 123 513 39 21.
-            <br className="hidden md:block"/>Uppge endast din e-mail i meddelandet.
+            <br className="hidden md:block"/> Uppge endast din e-mail i meddelandet.
           </p>
 
           <p className="mt-4 max-w-2xl text-base sm:text-lg leading-relaxed">

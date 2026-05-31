@@ -11,7 +11,7 @@ function MobileWorkshopPage() {
 
         <section className="relative overflow-hidden p-6 text-white sm:p-10 md:p-16">
           <div className="relative z-10 max-w-2xl">
-            <h1 className="text-[clamp(2.5rem,10vw,3.75rem)] font-black uppercase tracking-tight">
+            <h1 className="text-[clamp(2.5rem,10vw,3.75rem)] leading-none font-black uppercase tracking-tight">
               Mobila verkstaden
             </h1>
 
