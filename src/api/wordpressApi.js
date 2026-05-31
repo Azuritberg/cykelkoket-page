@@ -22,11 +22,13 @@ export function getFAQs() {
   return fetchFromWordPress("/faq")
 }
 
+export function getEvents() {
+  return fetchFromWordPress("/event")
+}
 
 
-// export function getEvents() {
-//   return fetchFromWordPress("/events")
-// }
+
+
 
 // export function getOpeningHours() {
 //   return fetchFromWordPress("/opening-hours")
