@@ -9,7 +9,7 @@ function Footer() {
 
       <div>
         <p className="font-black uppercase text-white">Plats</p>
-        <p className="mt-2">Augustenborgsgata 24E</p>
+        <p className="mt-2">Augustenborgsgatan 24E</p>
         <p>214 47 Malmö</p>
       </div>
 
