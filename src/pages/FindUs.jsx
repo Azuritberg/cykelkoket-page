@@ -16,7 +16,7 @@ function FindUs() {
             </h1>
 
             <p className="mt-8 text-base sm:text-lg leading-relaxed text-black/80">
-              Vår verkstad finns på Augustenborgsgata 24E, Malmö.
+              Vår verkstad finns på Augustenborgsgatan 24E, Malmö.
               <br className="hidden md:block"/> Här hittar du en karta till oss.
             </p>
 
