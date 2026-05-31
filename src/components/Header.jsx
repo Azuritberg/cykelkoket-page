@@ -43,7 +43,7 @@ function Header({ lightText = false }) {
 
       <Link
         to="/bli-medlem"
-        className="relative z-50 flex shrink-0 items-center rounded-xl bg-[var(--lime)] px-4 py-3 text-xs font-black uppercase text-black sm:px-5 sm:text-sm"
+        className="relative z-50 flex shrink-0 items-center rounded-xl bg-[var(--lime)] px-6 py-4 text-sm font-black uppercase text-black sm:px-5 sm:py-3 sm:text-sm"
       >
         Bli medlem <span className="ml-2 hidden text-[24px] md:inline">☺</span>
       </Link>
