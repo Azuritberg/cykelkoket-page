@@ -31,6 +31,10 @@ function Home() {
             <FAQ />
           </section>
         </div>
+        
+        <div className="mt-8 pb-5 flex items-center justify-between px-2 text-xs text-white/40">
+          <p>© 2026 Bojana Lukac</p>
+        </div>
       </div>
     </main>
   )
