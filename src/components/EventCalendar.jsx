@@ -43,19 +43,57 @@ function EventCalendar() {
     weekday: "long",
   })
 
+  const formattedWeekday =
+    weekday.charAt(0).toUpperCase() + weekday.slice(1)
+
+  const formattedDate = `${Number(day)}/${Number(month)}`
+
   const cleanStartTime = startTime?.slice(0, 5)
   const cleanEndTime = endTime?.slice(0, 5)
 
   if (cleanStartTime && cleanEndTime) {
-    return `${weekday.charAt(0).toUpperCase() + weekday.slice(1)} ${cleanStartTime}–${cleanEndTime}`
+    return `${formattedWeekday} ${formattedDate}  ·  ${cleanStartTime}–${cleanEndTime}`
   }
 
   if (cleanStartTime) {
-    return `${weekday.charAt(0).toUpperCase() + weekday.slice(1)} ${cleanStartTime}`
+    return `${formattedWeekday} ${formattedDate}  ·  ${cleanStartTime}`
   }
 
-  return weekday.charAt(0).toUpperCase() + weekday.slice(1)
+  return `${formattedWeekday} ${formattedDate}`
 }
+
+//   function formatEventDate(event) {
+//   const rawDate = event.acf?.event_date
+//   const startTime = event.acf?.start_time
+//   const endTime = event.acf?.end_time
+
+//   if (!rawDate && !startTime && !endTime) {
+//     return "Kommer snart"
+//   }
+
+//   const year = rawDate.slice(0, 4)
+//   const month = rawDate.slice(4, 6)
+//   const day = rawDate.slice(6, 8)
+
+//   const date = new Date(`${year}-${month}-${day}`)
+
+//   const weekday = date.toLocaleDateString("sv-SE", {
+//     weekday: "long",
+//   })
+
+//   const cleanStartTime = startTime?.slice(0, 5)
+//   const cleanEndTime = endTime?.slice(0, 5)
+
+//   if (cleanStartTime && cleanEndTime) {
+//     return `${weekday.charAt(0).toUpperCase() + weekday.slice(1)} ${cleanStartTime}–${cleanEndTime}`
+//   }
+
+//   if (cleanStartTime) {
+//     return `${weekday.charAt(0).toUpperCase() + weekday.slice(1)} ${cleanStartTime}`
+//   }
+
+//   return weekday.charAt(0).toUpperCase() + weekday.slice(1)
+// }
 
   // function formatEventDate(event) {
   //   const date = event.acf?.event_date
