@@ -49,7 +49,7 @@ function Header({ lightText = false, whiteLogo = false }) {
 
       <Link
         to="/bli-medlem"
-        className="relative z-50 flex shrink-0 items-center rounded-xl bg-[var(--lime)] px-6 py-4 text-sm font-black uppercase text-black sm:px-5 sm:py-3 sm:text-sm"
+        className="relative z-50 flex shrink-0 items-center rounded-xl bg-[var(--lime)] px-6 py-4 text-sm font-black uppercase text-black transition duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_var(--lime)] sm:px-5 sm:py-3 sm:text-sm"
       >
         Bli medlem <span className="ml-2 hidden text-[24px] md:inline">☺</span>
       </Link>
