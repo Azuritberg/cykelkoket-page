@@ -5,7 +5,7 @@ function OpeningStatus() {
   const { isOpen, currentDayName, nextDayName, timeText } = getOpeningStatus()
 
   return (
-    <section className="relative w-full max-w-full min-w-0 overflow-hidden rounded-2xl bg-[var(--surface-dark)] px-6 py-8 text-[var(--text-light)] sm:px-8 sm:py-10">
+    <section className="relative min-h-[550px] w-full max-w-full min-w-0 overflow-hidden rounded-2xl bg-[var(--surface-dark)] px-6 py-8 text-[var(--text-light)] sm:px-8 sm:py-10">
       <div className="relative z-10 w-full max-w-full min-w-0">
         <div className="flex min-w-0 items-center gap-3">
           <span
@@ -29,7 +29,7 @@ function OpeningStatus() {
           </span>
         </h2>
 
-        <p className="mt-6 max-w-sm text-sm leading-relaxed text-white/80">
+        {/* <p className="mt-6 max-w-sm text-sm leading-relaxed text-white/80">
           Kolla Facebook för eventuella <br />ändringar eller stängningar.
         </p>
 
@@ -40,7 +40,7 @@ function OpeningStatus() {
           className="mt-6 inline-block rounded-xl bg-[var(--pink)] px-6 py-4 text-sm font-black uppercase text-black transition duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_var(--pink)] sm:px-7 sm:text-base"
         >
           Till Facebook
-        </a>
+        </a> */}
       </div>
 
       <img

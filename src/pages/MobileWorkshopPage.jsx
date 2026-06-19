@@ -7,12 +7,12 @@ function MobileWorkshopPage() {
   return (
     <main className="min-h-screen bg-[var(--bg)] p-3">
       <div className="mx-auto max-w-[1200px] overflow-hidden rounded-2xl bg-[var(--surface-dark)]">
-        <Header lightText />
+        <Header lightText whiteLogo />
 
         <section className="relative overflow-hidden p-6 text-white sm:p-10 md:p-16">
           <div className="relative z-10 max-w-2xl">
             <h1 className="text-[clamp(2.5rem,10vw,3.75rem)] leading-none font-black uppercase tracking-tight">
-              Mobila verkstaden
+              Mobila verkstan
             </h1>
 
             <p className="mt-8 text-base sm:text-lg leading-relaxed text-white/80">

@@ -2,7 +2,7 @@ import Header from "../components/Header"
 import Hero from "../components/Hero"
 import OpeningStatus from "../components/OpeningStatus"
 import HowItWorks from "../components/HowItWorks"
-import InfoCards from "../components/InfoCards"
+//import InfoCards from "../components/InfoCards"
 import MobileWorkshop from "../components/MobileWorkshop"
 import FAQ from "../components/FAQ"
 import EventCalendar from "../components/EventCalendar"
@@ -26,7 +26,7 @@ function Home() {
 
           <section className="grid w-full min-w-0 grid-cols-[minmax(0,1fr)] gap-3 overflow-hidden">
             <OpeningStatus />
-            <InfoCards />
+            {/* <InfoCards /> */}
             <MobileWorkshop />
             <FAQ />
           </section>

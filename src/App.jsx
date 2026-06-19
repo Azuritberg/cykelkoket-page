@@ -5,6 +5,7 @@ import FindUs from "./pages/FindUs"
 import BecomeMember from "./pages/BecomeMember"
 import GiftMembership from "./pages/GiftMembership"
 import MobileWorkshopPage from "./pages/MobileWorkshopPage"
+import Foreningar from "./pages/Foreningar"
 import FAQPage from "./pages/FAQPage"
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route path="/bli-medlem" element={<BecomeMember />} />
       <Route path="/ge-bort-medlemskap" element={<GiftMembership />} />
       <Route path="/mobila-verkstaden" element={<MobileWorkshopPage />} />
+      <Route path="/foreningar" element={<Foreningar />} />
       <Route path="/faq" element={<FAQPage />} />
     </Routes>
   )

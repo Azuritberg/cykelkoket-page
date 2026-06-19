@@ -85,14 +85,14 @@ function Hero() {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
-              <a
+              {/* <a
                 href="https://www.facebook.com/cykelkoket"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-xl bg-[var(--pink)] px-5 py-4 text-sm font-black uppercase text-black transition hover:-translate-y-1 hover:shadow-[0_0_20px_var(--pink)] sm:px-7 sm:text-base"
               >
                 Till Facebook
-              </a>
+              </a> */}
 
               <button
                 onClick={() => setShowOpeningHours(false)}
