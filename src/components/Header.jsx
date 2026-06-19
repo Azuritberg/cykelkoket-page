@@ -41,7 +41,7 @@ function Header({ lightText = false, whiteLogo = false }) {
 
       <nav className="hidden items-center gap-8 text-sm font-bold uppercase md:flex">
         <Link to="/om-oss">Om Cykelköket</Link>
-        <Link to="/hitta-hit">Hitta hit</Link>
+        {/* <Link to="/hitta-hit">Hitta hit</Link> */}
         <Link to="/mobila-verkstaden">Mobila verkstan</Link>
         <Link to="/foreningar">Föreningar</Link>
         {/* <Link to="/faq">FAQ</Link> */}
@@ -72,13 +72,13 @@ function Header({ lightText = false, whiteLogo = false }) {
                 Om Cykelköket
               </Link>
 
-              <Link
+              {/* <Link
                 onClick={() => setMenuOpen(false)}
                 to="/hitta-hit"
                 className="border-b-2 border-[var(--surface)]/30 py-4"
               >
                 Hitta hit
-              </Link>
+              </Link> */}
 
               <Link
                 onClick={() => setMenuOpen(false)}
