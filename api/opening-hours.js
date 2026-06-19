@@ -50,14 +50,19 @@ export default async function handler(req, res) {
 
       return {
         title: event.summary,
-        dayName: start.toLocaleDateString("sv-SE", { weekday: "long" }),
+        dayName: start.toLocaleDateString("sv-SE", { 
+          weekday: "long", 
+          timeZone: "Europe/Stockholm", 
+        }),
         startTime: start.toLocaleTimeString("sv-SE", {
           hour: "2-digit",
           minute: "2-digit",
+          timeZone: "Europe/Stockholm",
         }),
         endTime: end.toLocaleTimeString("sv-SE", {
           hour: "2-digit",
           minute: "2-digit",
+          timeZone: "Europe/Stockholm",
         }),
         date: start.toISOString(),
       }
