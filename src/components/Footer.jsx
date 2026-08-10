@@ -1,5 +1,6 @@
 import ckLogoWhite from "../assets/CK-logga-vit.svg"
-
+import FacebookIcon from "../assets/facebook-icon.svg?react"
+import InstagramIcon from "../assets/instagram-icon.svg?react"
 
 function Footer() {
   return (
@@ -19,37 +20,55 @@ function Footer() {
 
       <div>
         <p className="font-black uppercase text-white">Plats</p>
-        <p className="mt-2">Augustenborgsgatan 24E, 214 47 Malmö</p>
-        {/* <p>214 47 Malmö</p> */}
+        <div className="mt-4">
+          <p className="mt-2">Augustenborgsgatan 24E, 214 47 Malmö</p>
+          {/* <p>214 47 Malmö</p> */}
+        </div>
       </div>
 
-      <div>
+      <div className="-mt-4">
         <p className="font-black uppercase text-white">Kontakt</p>
-        <a
-          href="mailto:cykelkoket@gmail.com"
-          className="mt-2 block transition hover:text-[var(--lime)]"
-        >
-          cykelkoket@gmail.com
-        </a>
+        <div className="mt-4">
+          <a
+            href="mailto:cykelkoket@gmail.com"
+            className="block transition hover:text-[var(--lime)]"
+          >
+            cykelkoket@gmail.com
+          </a>
+        </div>
       </div>
 
       <div>
-        <p className="font-black uppercase text-white">Socialt</p>
-        {/* <p className="mt-2">Följ oss på Facebook</p> */}
-        <a
-          href="https://www.facebook.com/cykelkoket"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-2 block transition hover:text-[var(--lime)]"
-        >
-          Följ oss på Facebook
-        </a>
+        <p className="font-black uppercase text-white">Följ oss</p>
+
+        <div className="mt-4 flex gap-4">
+          <a
+            href="https://www.instagram.com/cykelkoket/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="text-[var(--surface)] hover:text-[var(--lime)]"
+          >
+            <InstagramIcon className="h-10 w-10" />
+          </a>
+
+          <a
+            href="https://www.facebook.com/cykelkoket"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            className="text-[var(--surface)] hover:text-[var(--lime)]"
+          >
+            <FacebookIcon className="h-10 w-10" />
+          </a>
+        </div>
       </div>
+
+
     </footer>
     
   )
 }
 
 export default Footer
-
 
