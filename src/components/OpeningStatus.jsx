@@ -36,18 +36,44 @@ function OpeningStatus() {
   const upcomingOpenings = openingHours.slice(1, 3)
   const moreOpenings = openingHours.slice(3, 9)
 
+  const now = new Date()
+
+  const currentOpening = openingHours.find((item) => {
+    const start = new Date(item.startDate)
+    const end = new Date(item.endDate)
+
+    return now >= start && now < end && !item.isClosed
+  })
+
+const isOpenNow = Boolean(currentOpening)
+
   return (
     <section className="relative min-h-[550px] w-full max-w-full min-w-0 overflow-hidden rounded-2xl bg-[var(--surface-dark)] px-6 py-8 text-[var(--text-light)] sm:px-8 sm:py-10">
       <div className="relative z-10 w-full max-w-full min-w-0">
 
         {/* STATUS HÖGST UPP */}
         <div className="flex min-w-0 items-center gap-3">
+          <span
+            className={`h-3 w-3 shrink-0 animate-pulse rounded-full ${
+              isOpenNow
+                ? "bg-[var(--lime)] shadow-[0_0_20px_var(--lime)]"
+                : "bg-[var(--pink)] shadow-[0_0_20px_var(--pink)]"
+            }`}
+          ></span>
+
+          <p className="min-w-0 text-xs font-black uppercase tracking-widest sm:text-sm">
+            {isOpenNow
+              ? "Verkstaden är öppen nu"
+              : "Verkstaden är stängd nu"}
+          </p>
+        </div>
+        {/* <div className="flex min-w-0 items-center gap-3">
           <span className="h-3 w-3 shrink-0 animate-pulse rounded-full bg-[var(--pink)] shadow-[0_0_20px_var(--pink)]"></span>
 
           <p className="min-w-0 text-xs font-black uppercase tracking-widest sm:text-sm">
             Verkstaden är stängd nu
           </p>
-        </div>
+        </div> */}
 
         {/* LADDAR */}
         {loading && (

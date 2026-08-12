@@ -90,6 +90,9 @@ export default async function handler(req, res) {
         }),
 
         date: start.toISOString(),
+
+        startDate: start.toISOString(),
+        endDate: end.toISOString(),
       }
     })
 
