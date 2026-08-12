@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react"
+import { ChevronDown } from "lucide-react"
 import racerFixing from "../assets/racer-fixing.png"
 
 function OpeningStatus() {
   const [openingHours, setOpeningHours] = useState([])
   const [loading, setLoading] = useState(true)
+  const [showMore, setShowMore] = useState(false)
 
   useEffect(() => {
     async function loadOpeningHours() {
@@ -27,8 +29,12 @@ function OpeningStatus() {
     })
   }
 
+  // const nextOpening = openingHours[0]
+  // const upcomingOpenings = openingHours.slice(1)
+
   const nextOpening = openingHours[0]
-  const upcomingOpenings = openingHours.slice(1)
+  const upcomingOpenings = openingHours.slice(1, 3)
+  const moreOpenings = openingHours.slice(3, 9)
 
   return (
     <section className="relative min-h-[550px] w-full max-w-full min-w-0 overflow-hidden rounded-2xl bg-[var(--surface-dark)] px-6 py-8 text-[var(--text-light)] sm:px-8 sm:py-10">
@@ -60,7 +66,7 @@ function OpeningStatus() {
                   : "text-white/80"
               }`}
             >
-              {nextOpening.isClosed ? "Stängt" : "Öppet"}
+              {nextOpening.isClosed ? "Inställt" : "Öppet"}
             </p>
 
             <h2 className="mt-2 max-w-full text-[3.1rem] font-black uppercase leading-[1.05] text-[var(--lime)] sm:text-[3.6rem] lg:text-[4rem]">
@@ -99,7 +105,7 @@ function OpeningStatus() {
                       {item.isClosed ? (
                         <>
                           <p className="mt-1 font-black uppercase text-[var(--pink)]">
-                            Stängt
+                            Inställt
                           </p>
 
                           <p className="mt-1 text-sm text-white/60">
@@ -114,6 +120,52 @@ function OpeningStatus() {
                     </div>
                   ))}
                 </div>
+
+                {moreOpenings.length > 0 && (
+                  <div className="mt-7">
+                    <button
+                      type="button"
+                      onClick={() => setShowMore((prev) => !prev)}
+                      aria-expanded={showMore}
+                      className="group flex w-full max-w-sm items-center justify-between text-left text-sm font-black uppercase tracking-widest text-white/80 transition-colors hover:text-[var(--lime)]"
+                    >
+                      <span>Fler kommande öppettider</span>
+
+                      <ChevronDown
+                        strokeWidth={2}
+                        className={`h-7 w-7 text-white/80 transition-all duration-300 group-hover:text-[var(--lime)] ${
+                          showMore ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+
+                    {showMore && (
+                      <div className="mt-5 max-w-sm space-y-3">
+                        {moreOpenings.map((item) => (
+                          <div
+                            key={item.date}
+                            className="flex flex-wrap items-baseline gap-x-3 text-sm font-black uppercase text-[var(--lime)]"
+                          >
+                            <span>
+                              {item.dayName} {formatDate(item.date)}
+                            </span>
+
+                            {item.isClosed ? (
+                              <span className="text-[var(--pink)]">
+                                Inställt
+                              </span>
+                            ) : (
+                              <span>
+                                {item.startTime} – {item.endTime}
+                              </span>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
+
               </div>
             )}
           </>

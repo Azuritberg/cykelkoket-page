@@ -64,6 +64,7 @@ export default async function handler(req, res) {
       // Kontrollera om tillfället är inställt
       const isClosed =
         normalizedTitle.includes("stängt") ||
+        normalizedTitle.includes("stängd") ||
         normalizedTitle.includes("inställt") ||
         normalizedTitle.includes("inställd")
 
@@ -94,7 +95,7 @@ export default async function handler(req, res) {
 
     .sort((a, b) => new Date(a.date) - new Date(b.date))
 
-    .slice(0, 3)
+    .slice(0, 9)
 
   res.status(200).json(openingEvents)
 }
