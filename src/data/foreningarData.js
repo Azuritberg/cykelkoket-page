@@ -193,6 +193,6 @@ export const partners = [
 export const startBikeKitchenGuide = {
   title: "Starta ett cykelkök",
   line1: "Vill du starta ett cykelkök där du bor?",
-  line2: "Här finns en guide som hjälper dig att komma igång.",
+  line2: " Här finns en guide som hjälper dig att komma igång.",
   url: "https://www.smartakartan.se/global/cykelkok/",
 }
