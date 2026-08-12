@@ -131,10 +131,7 @@ function About() {
 
               <p className="mt-12 text-base leading-relaxed text-black/80 sm:text-lg">
                 Vi har öppet på <strong>Måndagar</strong> och{" "}
-                <strong>Onsdagar</strong>
-                <br className="md:hidden" />
-                <span className="hidden md:inline"> </span>
-                mellan 17–20.
+                <strong>Onsdagar</strong> mellan 17–20.
               </p>
 
               <p className="mt-12 text-base leading-relaxed text-black/80 sm:text-lg">

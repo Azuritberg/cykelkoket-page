@@ -16,20 +16,25 @@ function MobileWorkshopPage() {
             </h1>
 
             <p className="mt-8 text-base sm:text-lg leading-relaxed text-white/80">
-              Vi är ofta ute på event med vår mobila cykelverkstad fullproppad
-              med <br className="hidden md:block"/>verktyg, tvätt och olja.
+              Vi är ofta ute på event med vår mobila cykelverkstad fullproppad med 
+              <br className="hidden md:block"/>
+              verktyg, tvätt och olja.
             </p>
 
             <p className="mt-8 text-base sm:text-lg leading-relaxed text-white/80">
-              En viktig grundregel är att vi aldrig själva fixar folks cyklar.
-              Besökarna <br className="hidden md:block"/>får själva sköta skruvandet och vi finns på plats för
-              att instruera, ge en <br className="hidden md:block"/>hjälpande hand eller ge tips.
+              En viktig grundregel är att vi aldrig själva fixar folks cyklar. Besökarna får
+              <br className="hidden md:block" />
+              själva sköta skruvandet och vi finns på plats för att instruera, ge en
+              <br className="hidden md:block" />
+              hjälpande hand eller ge tips.
             </p>
 
             <p className="mt-8 text-base sm:text-lg leading-relaxed text-white/80">
-              Vi har flera olika koncept som vårcykelfix, kolla din cykel och
-              specifika <br className="hidden md:block"/>workshops som punkafix, bromsjustering,
-              växelinställning, sittställning <br className="hidden md:block"/>och hjulriktning.
+              Vi har flera olika koncept som vårcykelfix, kolla din cykel och specifika
+              <br className="hidden md:block" />
+              workshops som punkafix, bromsjustering, växelinställning, sittställning
+              <br className="hidden md:block" />
+              och hjulriktning.
             </p>
 
             <h4 className="mt-12 text-2xl font-black uppercase sm:text-3xl">
@@ -37,8 +42,9 @@ function MobileWorkshopPage() {
             </h4>
 
             <p className="mt-4 text-base sm:text-lg leading-relaxed text-white/80">
-              Kontakta oss om du vill att vi ska komma till er <br />med vår mobila
-              verkstad.
+              Kontakta oss om du vill att vi ska
+              <br className="md:hidden" />
+              komma till er med vår mobila verkstad.
             </p>
 
             <a
