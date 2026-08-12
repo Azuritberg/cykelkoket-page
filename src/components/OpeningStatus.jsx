@@ -67,13 +67,6 @@ const isOpenNow = Boolean(currentOpening)
               : "Verkstaden är stängd nu"}
           </p>
         </div>
-        {/* <div className="flex min-w-0 items-center gap-3">
-          <span className="h-3 w-3 shrink-0 animate-pulse rounded-full bg-[var(--pink)] shadow-[0_0_20px_var(--pink)]"></span>
-
-          <p className="min-w-0 text-xs font-black uppercase tracking-widest sm:text-sm">
-            Verkstaden är stängd nu
-          </p>
-        </div> */}
 
         {/* LADDAR */}
         {loading && (
@@ -155,7 +148,7 @@ const isOpenNow = Boolean(currentOpening)
                       aria-expanded={showMore}
                       className="group flex w-full max-w-sm items-center justify-between text-left text-sm font-black uppercase tracking-widest text-white/80 transition-colors hover:text-[var(--lime)]"
                     >
-                      <span>Fler kommande öppettider</span>
+                      <span>Se mer</span>
 
                       <ChevronDown
                         strokeWidth={2}
