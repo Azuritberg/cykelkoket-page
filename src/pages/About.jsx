@@ -121,9 +121,9 @@ function About() {
               <p className="mt-12 text-base leading-relaxed text-black/80 sm:text-lg">
                 Men ibland är vi sjuka, upptagna med annat eller öppnar{" "}
                 <br className="hidden md:block" />
-                lite senare. Så ta alltid en titt på vår Facebook-sida innan{" "}
+                lite senare. Så ta alltid en titt på våra öppettider på{" "}
                 <br className="hidden md:block" />
-                du besöker oss.
+                förstasidan innan du besöker oss.
               </p>
 
               <p className="mt-6 text-base leading-relaxed text-black/80 sm:text-lg">
@@ -131,17 +131,17 @@ function About() {
                 <br className="hidden md:block" />
                 händer även att vi håller öppet vid andra tider och dagar,{" "}
                 <br className="hidden md:block" />
-                det postar vi också på Facebook.
+                det postar vi också på våran förstasida.
               </p>
 
-              <a
+              {/* <a
                 href="https://www.facebook.com/cykelkoket"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-8 inline-block font-black underline underline-offset-4 hover:opacity-70"
               >
                 Cykelkökets Facebook
-              </a>
+              </a> */}
             </div>
           </div>
 
