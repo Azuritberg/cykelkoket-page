@@ -51,7 +51,7 @@ function About() {
             </p>
 
             <p className="mt-8 text-base leading-relaxed text-black/80 sm:text-lg">
-              Cykelköket är en <strong>ideell förening</strong> som drivs helt av volontärer. Utöver kärnan{" "}
+              Cykelköket är en ideell förening som drivs helt av volontärer. Utöver kärnan{" "}
               <br className="hidden md:block" />
               som är verkstaden så anordnar vi även workshops och har en mobil verkstad{" "}
               <br className="hidden md:block" />
