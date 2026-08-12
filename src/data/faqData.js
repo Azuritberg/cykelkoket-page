@@ -12,11 +12,11 @@ export const faqData = [
     question: "När har ni öppet?",
     answer: [
       "Vi har öppet måndagar och onsdagar mellan 17–20.",
-      "Ibland kan det hända att vi behöver hålla stängt, då vi blir sjuka eller bara inte kan. Då postar vi det på vår Facebook-sida.",
+      "Ibland kan det hända att vi behöver hålla stängt, då vi blir sjuka eller bara inte kan. Kolla därför alltid de aktuella öppettiderna här på hemsidan innan du kommer.",
     ],
   },
   {
-    question: "Min cykel är sönder, kan ni laga den?",
+    question: "Kan ni laga min cykel?",
     answer: [
       "Nej, vi lagar inte några cyklar. Däremot har vi alla verktygen du behöver så att du själv kan laga din cykel.",
       "Vi som är volontärer kan hjälpa dig med råd och tips efter bästa förmåga. Men det är alltid du som håller i verktygen när du ska laga din cykel.",
@@ -37,8 +37,8 @@ export const faqData = [
     answer: [
       "Vi är jätteglada för reservdelar och hela cyklar så att dessa kan komma till användning istället för att bara samla damm eller slängas.",
       "Har du mindre delar eller verktyg så kan du bara komma förbi med dem en medlemskväll.",
-      "Är det däremot en hel cykel så vill vi att du först mailar oss en bild på cykeln eftersom vi har begränsat med utrymme.",
-      "I framtiden vill vi utveckla vår möjlighet att återvinna cyklar och ta hand om fler cyklar som annars skulle slängas.",
+      "Är det däremot en eller fler hel cykel så vill vi att du först mailar oss en bild på cykeln eller cyklarna. Eftersom vi har begränsat med utrymme och ibland har vi fullt med cyklar.",
+      "I framtiden vill vi utveckla vår möjlighet att återvinna cyklar och ta hand om fler cyklar som annars skulle slängas. Men just nu måste vi tyvärr begränsa oss kring vilka cyklar vi kan ta emot.",
     ],
   },
   {
