@@ -16,7 +16,59 @@ function About() {
               Om Cykelköket
             </h1>
 
+            <h2 className="mt-8 text-xl font-black">
+              Vad är ett cykelkök?
+            </h2>
+
+            <p className="mt-4 text-base leading-relaxed text-black/80 sm:text-lg">
+              Ett cykelkök är en <strong>icke-kommersiell gör-det-själv-verkstad </strong>för alla <br className="hidden md:block" /> som behöver laga eller serva sin cykel med fokus på återbruk, delaktighet<br className="hidden md:block" /> och medskapande.
+            </p>
+
             <p className="mt-8 text-base leading-relaxed text-black/80 sm:text-lg">
+              Våren 2011 öppnade vi dörren för första gången till Cykelköket Malmö.{" "}
+              <br className="hidden md:block" />
+              Vi hade en liten uppsättning verktyg, cykelolja och några skrotcyklar.{" "}
+              <br className="hidden md:block" />
+              Det började i en liten skala, men växte snabbt då behovet av att kunna{" "}
+              <br className="hidden md:block" />
+              laga sin cykel var och är jättestort i Malmö. Vi var då en del av föreningen{" "}
+              <br className="hidden md:block" />
+              STPLN och låg i Stapelbäddens källare utan tillgång till dagsljus.
+            </p>
+
+            <p className="mt-8 text-base leading-relaxed text-black/80 sm:text-lg">
+              Mycket har hänt sedan dess, cyklar har blivit lagade, cyklar har räddats,{" "}
+              <br className="hidden md:block" />
+              mycket kaffe har druckits och otaliga har lärt sig allt från att laga en{" "}
+              <br className="hidden md:block" />
+              punktering till att bygga egna hjul. Vi finns nu i en annan källarlokal{" "}
+              <br className="hidden md:block" />
+              i en annan del av Malmö, närmare bestämt på Augustenborg. Nu med {" "}
+              <br className="hidden md:block" />
+              fönster och dagsljus! Vår uppsättning med verktyg har växt rejält och {" "}
+              <br className="hidden md:block" />
+              ryms inte längre i en liten verktygslåda.
+            </p>
+
+            <p className="mt-8 text-base leading-relaxed text-black/80 sm:text-lg">
+              Cykelköket är en <strong>ideell förening</strong> som drivs helt av volontärer. Utöver kärnan{" "}
+              <br className="hidden md:block" />
+              som är verkstaden så anordnar vi även workshops och har en mobil verkstad{" "}
+              <br className="hidden md:block" />
+              som är ute och snurrar på stan ibland. Utöver att vi lagar cyklar så arrangerar{" "}
+              <br className="hidden md:block" />
+              vi t ex föreläsningar, workshops, kurser och mycket annat!
+            </p>
+
+            <p className="mt-8 text-base leading-relaxed text-black/80 sm:text-lg">
+              Vi behöver alltid hjälp med lite allt möjligt, så tveka inte att höra av dig{" "}
+              <br className="hidden md:block" />
+              om du skulle vilja bidra på något sätt. Eller kom förbi på en flabb kaffe{" "}
+              <br className="hidden md:block" />
+              under någon av våra öppettider så berättar vi mer.
+            </p>
+
+            {/* <p className="mt-8 text-base leading-relaxed text-black/80 sm:text-lg">
               Cykelköket Malmö är en ideell förening. <br className="hidden md:block" />
               Vi har en gemensam <strong>gör-det-själv</strong> cykelverkstad.
             </p>
@@ -35,7 +87,7 @@ function About() {
               avancerade kurser som sträcker sig över flera månader. Kurserna
               anpassas <br className="hidden md:block" />
               efter gruppens färdigheter, erfarenheter och ambitioner.
-            </p>
+            </p> */}
 
             <div className="mt-16 pt-12">
               <div className="mb-12 w-[82%] border-t border-black/20"></div>
@@ -98,7 +150,7 @@ function About() {
             <img
               src={roadBike}
               alt=""
-              className="absolute top-[-7px] right-[-70px] h-[650px] w-auto max-w-none object-contain opacity-30"
+              className="absolute top-[60px] right-[-70px] h-[650px] w-auto max-w-none object-contain opacity-30"
             />
 
             <img

@@ -14,8 +14,7 @@ function MobileWorkshop() {
         </h2>
 
         <p className="mt-6 max-w-sm text-base leading-relaxed text-black/75 sm:text-lg">
-          Vi kommer till er. Boka oss till er arbetsplats, skola, förening eller
-          event.
+          Vi kommer till er med vår mobila verkstad fullproppad med verktyg. Boka oss till er arbetsplats, skola, förening eller event.” 
         </p>
 
         <Link

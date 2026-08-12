@@ -23,8 +23,7 @@ function Hero() {
           </h1>
 
           <p className="mt-6 max-w-md text-base leading-relaxed text-black/80 sm:mt-8 sm:text-lg">
-            Cykelköket är en ideell gör-det-själv verkstad där alla är välkomna
-            att laga sin cykel med hjälp av verktyg, reservdelar och volontärer.
+            Cykelköket är en ideell gör-det-själv-verkstad där alla är välkomna att laga sin cykel. Här finns verktyg, reservdelar och volontärer som hjälper till när det behövs. Vi skruvar på cyklar och lär av varandra.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">

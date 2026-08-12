@@ -8,7 +8,7 @@ function HowItWorks() {
     {
       number: "2",
       title: "Bli medlem",
-      text: "Betala 100 kr/år på plats eller via Swish innan.",
+      text: "100kr per år. Betala på plats eller via Swish innan.",
     },
     {
       number: "3",
@@ -18,7 +18,7 @@ function HowItWorks() {
     {
       number: "4",
       title: "Laga själv",
-      text: "Du lagar själv med hjälp och stöd av volontärer.",
+      text: "Du lagar och skruvar själv, hjälp och råd får du av oss.",
     },
   ]
 
