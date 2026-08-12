@@ -1,3 +1,6 @@
+import { useEffect } from "react"
+import { useLocation } from "react-router"
+
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
@@ -5,6 +8,22 @@ import bikeRoad from "../assets/bike-vag.png"
 import roadBike from "../assets/bike-vag-two.png"
 
 function About() {
+
+  const location = useLocation()
+
+    useEffect(() => {
+      if (location.hash) {
+        const element = document.querySelector(location.hash)
+
+        if (element) {
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          })
+        }
+      }
+    }, [location])
+
   return (
     <main className="min-h-screen bg-[var(--bg)] p-3">
       <div className="mx-auto max-w-[1200px] overflow-hidden rounded-2xl bg-[var(--surface)]">
@@ -89,7 +108,7 @@ function About() {
               efter gruppens färdigheter, erfarenheter och ambitioner.
             </p> */}
 
-            <div className="mt-4 pt-12">
+            <div id="hitta-till-oss" className="mt-4 scroll-mt-16 pt-12">
               <div className="mb-12 w-[82%] border-t border-black/20"></div>
 
               <h2 className="text-[clamp(2.5rem,10vw,3.75rem)] font-black uppercase leading-none tracking-tight">

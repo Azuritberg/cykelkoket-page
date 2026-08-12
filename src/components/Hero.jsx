@@ -35,7 +35,7 @@ function Hero() {
             </button>
 
             <Link
-              to="/hitta-hit"
+              to="/om-oss#hitta-till-oss"
               className="flex items-center justify-center rounded-xl border-2 border-black px-5 py-4 text-sm font-black uppercase transition duration-300 hover:-translate-y-1 hover:bg-black hover:text-white sm:px-7 sm:text-base"
             >
               Hitta hit
