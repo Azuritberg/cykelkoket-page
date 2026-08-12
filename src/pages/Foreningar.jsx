@@ -17,13 +17,26 @@ function FriendCard({ item }) {
       rel="noopener noreferrer"
       className="group flex min-h-[300px] flex-col rounded-2xl border-2 border-black/10 bg-white/30 p-6 transition duration-300 hover:-translate-y-1 hover:border-[var(--lime)] hover:shadow-[0_0_35px_var(--lime)]"
     >
-      <div className="flex h-28 items-center justify-center">
+
+    <div className="flex h-36 items-center justify-center">
+      <img
+        src={item.image}
+        alt={`${item.name} logotyp`}
+        className={`
+          object-contain
+          transition-all duration-300
+          group-hover:scale-105
+          ${item.logoClass ?? "max-h-24 max-w-[180px]"}
+        `}
+      />
+    </div>
+      {/* <div className="flex h-28 items-center justify-center">
         <img
           src={item.image}
           alt={`${item.name} logotyp`}
           className="max-h-24 max-w-[180px] object-contain transition duration-300 group-hover:scale-105"
         />
-      </div>
+      </div> */}
 
       <div className="mt-6">
         <h3 className="text-lg font-black uppercase">
@@ -84,6 +97,33 @@ function Foreningar() {
               href={startBikeKitchenGuide.url}
               target="_blank"
               rel="noopener noreferrer"
+              className="
+                mt-8 block rounded-2xl bg-[var(--lime)]
+                p-6 sm:p-8 md:p-10
+                transition duration-300
+                hover:-translate-y-1
+                hover:shadow-[0_0_35px_var(--lime)]
+              "
+            >
+              <p className="text-sm font-black uppercase sm:text-base">
+                {startBikeKitchenGuide.title}
+              </p>
+
+              <p className="mt-3 text-lg font-bold leading-snug sm:text-xl md:text-2xl">
+                <span className="md:block">
+                  {startBikeKitchenGuide.line1}
+                </span>
+
+                <span className="md:block">
+                  {startBikeKitchenGuide.line2} →
+                </span>
+              </p>
+            </a>
+
+            {/* <a
+              href={startBikeKitchenGuide.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-8 block rounded-2xl bg-[var(--lime)] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-[0_0_35px_var(--lime)]"
             >
               <p className="text-sm font-black uppercase">
@@ -93,7 +133,7 @@ function Foreningar() {
               <p className="mt-2 max-w-xl text-lg font-bold">
                 {startBikeKitchenGuide.description} →
               </p>
-            </a>
+            </a> */}
           </div>
 
           <div className="mt-16">

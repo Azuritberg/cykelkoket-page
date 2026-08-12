@@ -80,7 +80,7 @@ function Hero() {
 
             <p className="mt-4 text-base leading-relaxed sm:text-lg">
               Du kan bli medlem på plats om du inte redan är det. Om vi tvingas
-              hålla stängt så postar vi det på vår Facebooksida.
+              hålla stängt så postar vi det under öppettiden.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
