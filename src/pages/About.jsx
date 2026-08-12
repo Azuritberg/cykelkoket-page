@@ -21,7 +21,7 @@ function About() {
             </h2>
 
             <p className="mt-4 text-base leading-relaxed text-black/80 sm:text-lg">
-              Ett cykelkök är en <strong>icke-kommersiell gör-det-själv-verkstad </strong>för alla <br className="hidden md:block" /> som behöver laga eller serva sin cykel med fokus på återbruk, delaktighet<br className="hidden md:block" /> och medskapande.
+              Ett cykelkök är en <strong>icke-kommersiell gör-det-själv</strong> cykelverkstad för alla <br className="hidden md:block" /> som behöver laga eller serva sin cykel med fokus på återbruk, delaktighet<br className="hidden md:block" /> och medskapande.
             </p>
 
             <p className="mt-8 text-base leading-relaxed text-black/80 sm:text-lg">
@@ -89,7 +89,7 @@ function About() {
               efter gruppens färdigheter, erfarenheter och ambitioner.
             </p> */}
 
-            <div className="mt-16 pt-12">
+            <div className="mt-4 pt-12">
               <div className="mb-12 w-[82%] border-t border-black/20"></div>
 
               <h2 className="text-[clamp(2.5rem,10vw,3.75rem)] font-black uppercase leading-none tracking-tight">
@@ -156,7 +156,7 @@ function About() {
             <img
               src={bikeRoad}
               alt=""
-              className="absolute bottom-[-40px] right-[-70px] h-[650px] w-auto max-w-none object-contain opacity-30"
+              className="absolute bottom-[0px] right-[-70px] h-[650px] w-auto max-w-none object-contain opacity-30"
             />
 
           </div>
