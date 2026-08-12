@@ -43,7 +43,7 @@ function Header({ lightText = false, whiteLogo = false }) {
         <Link to="/om-oss">Om Cykelköket</Link>
         {/* <Link to="/hitta-hit">Hitta hit</Link> */}
         <Link to="/mobila-verkstaden">Mobila verkstan</Link>
-        <Link to="/foreningar">Föreningar</Link>
+        <Link to="/foreningar">Våra vänner</Link>
         {/* <Link to="/faq">FAQ</Link> */}
       </nav>
 
@@ -93,7 +93,7 @@ function Header({ lightText = false, whiteLogo = false }) {
                 to="/foreningar"
                 className="py-4"
               >
-                Föreningar
+                Våra vänner
               </Link>
 
               {/* <Link
