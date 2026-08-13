@@ -2,7 +2,7 @@
 
 Ny webbplats för Cykelköket Malmö, utvecklad i React med WordPress som administrativ backend.
 
-Webbplatsen innehåller bland annat dynamiska event från WordPress, öppettider synkroniserade med Google Kalender samt formulärhantering för Ge bort xmedlemskap via Resend.
+Webbplatsen innehåller bland annat dynamiska event från WordPress, öppettider synkroniserade med Google Kalender samt formulärhantering för Ge bort medlemskap via Resend.
 
 ## Webbplats
 
