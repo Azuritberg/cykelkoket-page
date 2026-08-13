@@ -145,6 +145,7 @@ export const friends = [
       "Samlar verksamheter där du kan hyra, byta, låna, dela, ge och få samt hitta reparatörer och second hand.",
     url: "https://www.smartakartan.se/",
     image: smartaKartanLogo,
+    logoClass: "max-h-36 max-w-[90%]",
   },
 
   {

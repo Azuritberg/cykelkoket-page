@@ -30,13 +30,6 @@ function FriendCard({ item }) {
         `}
       />
     </div>
-      {/* <div className="flex h-28 items-center justify-center">
-        <img
-          src={item.image}
-          alt={`${item.name} logotyp`}
-          className="max-h-24 max-w-[180px] object-contain transition duration-300 group-hover:scale-105"
-        />
-      </div> */}
 
       <div className="mt-6">
         <h3 className="text-lg font-black uppercase">
@@ -120,20 +113,6 @@ function Foreningar() {
               </p>
             </a>
 
-            {/* <a
-              href={startBikeKitchenGuide.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 block rounded-2xl bg-[var(--lime)] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-[0_0_35px_var(--lime)]"
-            >
-              <p className="text-sm font-black uppercase">
-                {startBikeKitchenGuide.title}
-              </p>
-
-              <p className="mt-2 max-w-xl text-lg font-bold">
-                {startBikeKitchenGuide.description} →
-              </p>
-            </a> */}
           </div>
 
           <div className="mt-16">
@@ -173,72 +152,3 @@ export default Foreningar
 
 
 
-
-
-
-// Gamalt ska slängas sen
-
-
-// function Foreningar() {
-//   return (
-//     <main className="min-h-screen bg-[var(--bg)] p-3">
-//       <div className="mx-auto max-w-[1200px] overflow-hidden rounded-2xl bg-[var(--surface)]">
-//         <Header />
-
-//         <section className="p-6 sm:p-10 md:p-16">
-//           <h1 className="text-[clamp(2.5rem,10vw,3.75rem)] font-black uppercase leading-none tracking-tight">
-//             Våra
-//             <br className="sm:hidden" />
-//             <span className="hidden sm:inline"> </span>
-//             vänner
-//           </h1>
-
-//           <p className="mt-8 text-base leading-relaxed text-black/80 sm:text-lg">
-//             Information kommer snart.
-//           </p>
-//         </section>
-//       </div>
-
-//       <div className="mx-auto mt-3 max-w-[1200px]">
-//         <Footer />
-//       </div>
-//     </main>
-//   )
-// }
-
-// export default Foreningar
-
-
-
-
-
-
-
-// import Header from "../components/Header"
-// import Footer from "../components/Footer"
-
-// function Foreningar() {
-//   return (
-//     <main className="min-h-screen bg-[var(--bg)] p-3">
-//       <div className="mx-auto max-w-[1200px] overflow-hidden rounded-2xl bg-[var(--surface)]">
-//         <Header />
-
-//         <section className="p-10 md:p-16">
-//           <h1 className="text-6xl font-black uppercase tracking-tight">
-//             Föreningar
-//           </h1>
-
-//           <p className="mt-8 text-lg text-black/80">
-//             Information kommer snart.
-//           </p>
-//         </section>
-//       </div>
-
-//       <div className="mx-auto mt-3 max-w-[1200px]">
-//         <Footer />
-//       </div>
-//     </main>
-//   )
-// }
-
-// export default Foreningar

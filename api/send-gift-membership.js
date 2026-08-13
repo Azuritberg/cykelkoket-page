@@ -38,7 +38,7 @@ export default async function handler(req, res) {
       subject: `Ge bort medlemskap – ${friendName}`,
 
       text: `
-NYTT PRESENTMEDLEMSKAP
+NYTT GE BORT MEDLEMSKAP
 
 
 DIN VÄNS UPPGIFTER
