@@ -10,14 +10,6 @@ async function fetchFromWordPress(endpoint) {
   return response.json()
 }
 
-export function getPages() {
-  return fetchFromWordPress("/pages")
-}
-
-export function getPosts() {
-  return fetchFromWordPress("/posts")
-}
-
 export function getFAQs() {
   return fetchFromWordPress("/faq")
 }
@@ -28,6 +20,15 @@ export function getEvents() {
 
 
 
+
+
+// export function getPages() {
+//   return fetchFromWordPress("/pages")
+// }
+
+// export function getPosts() {
+//   return fetchFromWordPress("/posts")
+// }
 
 
 // export function getOpeningHours() {
