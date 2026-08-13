@@ -5,6 +5,7 @@ import cykelframjandetLogo from "../assets/forening-logo/CF-logo-sv.svg"
 import cykelframjandetSymbol from "../assets/forening-logo/CF-symbol-svart.svg"
 import cykelfixBiskopsgardenLogo from "../assets/forening-logo/cykelfix-norra-biskopsgarden.svg"
 import navetLogo from "../assets/forening-logo/cykelkoket_navet.webp"
+import cykeljuntanLogo from "../assets/forening-logo/umeas-CK.png"
 import goteborgLogo from "../assets/forening-logo/cykelkoket-gbg.svg"
 import cyklingUtanAlderLogo from "../assets/forening-logo/cykling-utan-alder.svg"
 import gamlestanLogo from "../assets/forening-logo/gamlestan-CK-gbg.svg"
@@ -107,6 +108,16 @@ export const bikeKitchens = [
       "Cykelkök inom Cykelfrämjandet med fokus på att fler ska kunna ta hand om sin cykel.",
     url: "https://cykelframjandet.se/cykelkok-stockholm/",
     image: cykelframjandetLogo,
+  },
+
+  {
+    name: "Cykeljuntan Umeå",
+    location: "Umeå",
+    description:
+      "Cykeljuntan är en ideell förening som hjälper folk att lära sig att själva laga och fixa sina cyklar",
+    url: "https://www.https://cykeljuntan.nu/",
+    image: cykeljuntanLogo,
+    logoClass: "max-h-38 max-w-[90%]",
   },
 
   {
