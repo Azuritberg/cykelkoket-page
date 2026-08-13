@@ -2,7 +2,7 @@
 
 Ny webbplats för Cykelköket Malmö, utvecklad i React med WordPress som administrativ backend.
 
-Webbplatsen innehåller bland annat dynamiska event och FAQ från WordPress, öppettider synkroniserade med Google Kalender samt formulärhantering för presentmedlemskap via Resend.
+Webbplatsen innehåller bland annat dynamiska event från WordPress, öppettider synkroniserade med Google Kalender samt formulärhantering för Ge bort xmedlemskap via Resend.
 
 ## Webbplats
 
@@ -23,10 +23,6 @@ Projektet använder bland annat:
 - Vercel Functions
 - Resend
 
-## Köra projektet lokalt
+```
 
-Klona repositoryt:
-
-```bash
-git clone https://github.com/Azuritberg/cykelkoket-page.git
 ```
