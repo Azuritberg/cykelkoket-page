@@ -42,8 +42,8 @@ function MobileWorkshopPage() {
             </h4>
 
             <p className="mt-4 text-base sm:text-lg leading-relaxed text-white/80">
-              Kontakta oss om du vill att vi ska
-              <br className="md:hidden" />
+              Kontakta oss om du vill att vi ska{" "}
+              <br className="md:hidden" /> 
               komma till er med vår mobila verkstad.
             </p>
 
