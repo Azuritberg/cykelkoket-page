@@ -6,12 +6,11 @@ import { getEvents } from "../api/wordpressApi"
 function EventCalendar() {
   const [events, setEvents] = useState([])
   const [openEvent, setOpenEvent] = useState(null)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     getEvents()
       .then((data) => {
-        console.log("Events från WordPress:", data)
-
         const sortedEvents = data
           .filter((event) => event.acf?.show_on_home)
           .sort((a, b) => {
@@ -21,6 +20,9 @@ function EventCalendar() {
         setEvents(sortedEvents)
       })
       .catch(console.error)
+      .finally(() => {
+        setLoading(false)
+      })
   }, [])
 
 
@@ -62,6 +64,116 @@ function EventCalendar() {
   return `${formattedWeekday} ${formattedDate}`
 }
 
+
+  return (
+    <section className="relative min-h-[460px] overflow-hidden rounded-2xl bg-[var(--surface-dark)] p-10 text-[var(--text-light)]">
+      <h2 className="text-4xl font-black uppercase leading-none">
+        <span className="text-white">Nyheter | </span>
+        <span className="text-[var(--lime)]">Event</span>
+      </h2>
+
+      <div className="relative mt-8">
+        {loading ? (
+          <p className="text-base text-white/60">
+            Laddar event...
+          </p>
+        ) : events.length === 0 ? (
+          <div className="py-8">
+            <p className="max-w-md text-base leading-relaxed text-white/70 sm:text-lg">
+              När vi har kommande event och aktiviteter publiceras de här.
+            </p>
+          </div>
+        ) : (
+          <>
+            <div className="hide-scrollbar max-h-[340px] space-y-4 overflow-y-auto pb-20">
+              {events.map((event, index) => {
+                const isOpen = openEvent === index
+
+                return (
+                  <article
+                    key={event.id}
+                    className="rounded-xl border border-[var(--lime)] bg-black/20 p-5 backdrop-blur-sm"
+                  >
+                    <button
+                      onClick={() => setOpenEvent(isOpen ? null : index)}
+                      className="flex w-full items-start justify-between gap-4 text-left"
+                    >
+                      <div>
+                        <p className="font-black uppercase text-white">
+                          {event.title.rendered}
+                        </p>
+
+                        <p className="mt-2 text-white/70">
+                          {formatEventDate(event)}
+                        </p>
+                      </div>
+
+                      <ChevronDown
+                        size={28}
+                        strokeWidth={3}
+                        className={`mt-1 shrink-0 text-[var(--lime)] transition-transform duration-300 ${
+                          isOpen ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
+
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ${
+                        isOpen
+                          ? "mt-4 max-h-40 opacity-100"
+                          : "max-h-0 opacity-0"
+                      }`}
+                    >
+                      <p className="border-t border-white/15 pt-4 text-sm leading-relaxed text-white">
+                        {event.acf?.short_description}
+                      </p>
+                    </div>
+                  </article>
+                )
+              })}
+            </div>
+
+            <div className="pointer-events-none absolute bottom-0 left-0 h-24 w-full bg-gradient-to-t from-[var(--surface-dark)] via-[var(--surface-dark)]/80 to-transparent" />
+          </>
+        )}
+      </div>
+    </section>
+  )
+}
+
+export default EventCalendar
+
+
+
+
+
+
+// import { useEffect, useState } from "react"
+// import { ChevronDown } from "lucide-react"
+// import { getEvents } from "../api/wordpressApi"
+
+
+// function EventCalendar() {
+//   const [events, setEvents] = useState([])
+//   const [openEvent, setOpenEvent] = useState(null)
+
+//   useEffect(() => {
+//     getEvents()
+//       .then((data) => {
+//         console.log("Events från WordPress:", data)
+
+//         const sortedEvents = data
+//           .filter((event) => event.acf?.show_on_home)
+//           .sort((a, b) => {
+//             return (a.acf?.order_number || 0) - (b.acf?.order_number || 0)
+//           })
+
+//         setEvents(sortedEvents)
+//       })
+//       .catch(console.error)
+//   }, [])
+
+
 //   function formatEventDate(event) {
 //   const rawDate = event.acf?.event_date
 //   const startTime = event.acf?.start_time
@@ -81,103 +193,141 @@ function EventCalendar() {
 //     weekday: "long",
 //   })
 
+//   const formattedWeekday =
+//     weekday.charAt(0).toUpperCase() + weekday.slice(1)
+
+//   const formattedDate = `${Number(day)}/${Number(month)}`
+
 //   const cleanStartTime = startTime?.slice(0, 5)
 //   const cleanEndTime = endTime?.slice(0, 5)
 
 //   if (cleanStartTime && cleanEndTime) {
-//     return `${weekday.charAt(0).toUpperCase() + weekday.slice(1)} ${cleanStartTime}–${cleanEndTime}`
+//     return `${formattedWeekday} ${formattedDate}  ·  ${cleanStartTime}–${cleanEndTime}`
 //   }
 
 //   if (cleanStartTime) {
-//     return `${weekday.charAt(0).toUpperCase() + weekday.slice(1)} ${cleanStartTime}`
+//     return `${formattedWeekday} ${formattedDate}  ·  ${cleanStartTime}`
 //   }
 
-//   return weekday.charAt(0).toUpperCase() + weekday.slice(1)
+//   return `${formattedWeekday} ${formattedDate}`
 // }
 
-  // function formatEventDate(event) {
-  //   const date = event.acf?.event_date
-  //   const startTime = event.acf?.start_time
-  //   const endTime = event.acf?.end_time
+// //   function formatEventDate(event) {
+// //   const rawDate = event.acf?.event_date
+// //   const startTime = event.acf?.start_time
+// //   const endTime = event.acf?.end_time
 
-  //   if (!date && !startTime && !endTime) {
-  //     return "Kommer snart"
-  //   }
+// //   if (!rawDate && !startTime && !endTime) {
+// //     return "Kommer snart"
+// //   }
 
-  //   if (startTime && endTime) {
-  //     return `${date} ${startTime}–${endTime}`
-  //   }
+// //   const year = rawDate.slice(0, 4)
+// //   const month = rawDate.slice(4, 6)
+// //   const day = rawDate.slice(6, 8)
 
-  //   if (startTime) {
-  //     return `${date} ${startTime}`
-  //   }
+// //   const date = new Date(`${year}-${month}-${day}`)
 
-  //   return date
-  // }
+// //   const weekday = date.toLocaleDateString("sv-SE", {
+// //     weekday: "long",
+// //   })
 
-  return (
-    <section className="relative overflow-hidden rounded-2xl bg-[var(--surface-dark)] p-10 text-[var(--text-light)]">
-      <h2 className="text-4xl font-black uppercase leading-none">
-        <span className="text-white">Nyheter | </span>
-        <span className="text-[var(--lime)]">Event</span>
-      </h2>
+// //   const cleanStartTime = startTime?.slice(0, 5)
+// //   const cleanEndTime = endTime?.slice(0, 5)
 
-      <div className="relative mt-8">
-        <div className="hide-scrollbar max-h-[340px] space-y-4 overflow-y-auto pb-20">
-          {events.map((event, index) => {
-            const isOpen = openEvent === index
+// //   if (cleanStartTime && cleanEndTime) {
+// //     return `${weekday.charAt(0).toUpperCase() + weekday.slice(1)} ${cleanStartTime}–${cleanEndTime}`
+// //   }
 
-            return (
-              <article
-                key={event.id}
-                className="rounded-xl border border-[var(--lime)] bg-black/20 p-5 backdrop-blur-sm"
-              >
-                <button
-                  onClick={() => setOpenEvent(isOpen ? null : index)}
-                  className="flex w-full items-start justify-between gap-4 text-left"
-                >
-                  <div>
-                    <p className="font-black uppercase text-white">
-                      {event.title.rendered}
-                    </p>
+// //   if (cleanStartTime) {
+// //     return `${weekday.charAt(0).toUpperCase() + weekday.slice(1)} ${cleanStartTime}`
+// //   }
 
-                    <p className="mt-2 text-white/70">
-                      {formatEventDate(event)}
-                    </p>
-                  </div>
+// //   return weekday.charAt(0).toUpperCase() + weekday.slice(1)
+// // }
 
-                  <ChevronDown
-                    size={28}
-                    strokeWidth={3}
-                    className={`mt-1 shrink-0 text-[var(--lime)] transition-transform duration-300 ${
-                      isOpen ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
+//   // function formatEventDate(event) {
+//   //   const date = event.acf?.event_date
+//   //   const startTime = event.acf?.start_time
+//   //   const endTime = event.acf?.end_time
 
-                <div
-                  className={`overflow-hidden transition-all duration-300 ${
-                    isOpen
-                      ? "mt-4 max-h-40 opacity-100"
-                      : "max-h-0 opacity-0"
-                  }`}
-                >
-                  <p className="border-t border-white/15 pt-4 text-sm leading-relaxed text-white">
-                    {event.acf?.short_description}
-                  </p>
-                </div>
-              </article>
-            )
-          })}
-        </div>
+//   //   if (!date && !startTime && !endTime) {
+//   //     return "Kommer snart"
+//   //   }
 
-        <div className="pointer-events-none absolute bottom-0 left-0 h-24 w-full bg-gradient-to-t from-[var(--surface-dark)] via-[var(--surface-dark)]/80 to-transparent" />
-      </div>
-    </section>
-  )
-}
+//   //   if (startTime && endTime) {
+//   //     return `${date} ${startTime}–${endTime}`
+//   //   }
 
-export default EventCalendar
+//   //   if (startTime) {
+//   //     return `${date} ${startTime}`
+//   //   }
+
+//   //   return date
+//   // }
+
+//   return (
+//     <section className="relative overflow-hidden rounded-2xl bg-[var(--surface-dark)] p-10 text-[var(--text-light)]">
+//       <h2 className="text-4xl font-black uppercase leading-none">
+//         <span className="text-white">Nyheter | </span>
+//         <span className="text-[var(--lime)]">Event</span>
+//       </h2>
+
+//       <div className="relative mt-8">
+//         <div className="hide-scrollbar max-h-[340px] space-y-4 overflow-y-auto pb-20">
+//           {events.map((event, index) => {
+//             const isOpen = openEvent === index
+
+//             return (
+//               <article
+//                 key={event.id}
+//                 className="rounded-xl border border-[var(--lime)] bg-black/20 p-5 backdrop-blur-sm"
+//               >
+//                 <button
+//                   onClick={() => setOpenEvent(isOpen ? null : index)}
+//                   className="flex w-full items-start justify-between gap-4 text-left"
+//                 >
+//                   <div>
+//                     <p className="font-black uppercase text-white">
+//                       {event.title.rendered}
+//                     </p>
+
+//                     <p className="mt-2 text-white/70">
+//                       {formatEventDate(event)}
+//                     </p>
+//                   </div>
+
+//                   <ChevronDown
+//                     size={28}
+//                     strokeWidth={3}
+//                     className={`mt-1 shrink-0 text-[var(--lime)] transition-transform duration-300 ${
+//                       isOpen ? "rotate-180" : ""
+//                     }`}
+//                   />
+//                 </button>
+
+//                 <div
+//                   className={`overflow-hidden transition-all duration-300 ${
+//                     isOpen
+//                       ? "mt-4 max-h-40 opacity-100"
+//                       : "max-h-0 opacity-0"
+//                   }`}
+//                 >
+//                   <p className="border-t border-white/15 pt-4 text-sm leading-relaxed text-white">
+//                     {event.acf?.short_description}
+//                   </p>
+//                 </div>
+//               </article>
+//             )
+//           })}
+//         </div>
+
+//         <div className="pointer-events-none absolute bottom-0 left-0 h-24 w-full bg-gradient-to-t from-[var(--surface-dark)] via-[var(--surface-dark)]/80 to-transparent" />
+//       </div>
+//     </section>
+//   )
+// }
+
+// export default EventCalendar
 
 
 

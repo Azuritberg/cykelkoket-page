@@ -1,5 +1,5 @@
-import { useEffect } from "react"
-import { useLocation } from "react-router"
+// import { useEffect } from "react"
+// import { useLocation } from "react-router"
 
 import Header from "../components/Header"
 import Footer from "../components/Footer"
@@ -9,20 +9,20 @@ import roadBike from "../assets/bike-vag-two.png"
 
 function About() {
 
-  const location = useLocation()
+  // const location = useLocation()
 
-    useEffect(() => {
-      if (location.hash) {
-        const element = document.querySelector(location.hash)
+  //   useEffect(() => {
+  //     if (location.hash) {
+  //       const element = document.querySelector(location.hash)
 
-        if (element) {
-          element.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          })
-        }
-      }
-    }, [location])
+  //       if (element) {
+  //         element.scrollIntoView({
+  //           behavior: "smooth",
+  //           block: "start",
+  //         })
+  //       }
+  //     }
+  //   }, [location])
 
   return (
     <main className="min-h-screen bg-[var(--bg)] p-3">
