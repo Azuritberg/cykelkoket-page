@@ -110,24 +110,23 @@ function About() {
               </a>
 
               <p className="mt-12 text-base leading-relaxed text-black/80 sm:text-lg">
-                Vi har öppet på <strong>Måndagar</strong> och{" "}
-                <strong>Onsdagar</strong> mellan 17–20.
+                Vi har öppet på <strong>måndagar</strong> och{" "}
+                <strong>onsdagar</strong> mellan 17–20.
               </p>
 
               <p className="mt-12 text-base leading-relaxed text-black/80 sm:text-lg">
-                Men ibland är vi sjuka, upptagna med annat eller öppnar{" "}
+                Ibland kan öppettiderna ändras, till exempel om vi är sjuka,{" "}
                 <br className="hidden md:block" />
-                lite senare. Så ta alltid en titt på våra öppettider på{" "}
+                upptagna med annat eller öppnar lite senare.{" "}
                 <br className="hidden md:block" />
-                förstasidan innan du besöker oss.
+                Vi har också ibland extra öppet på andra dagar och tider.
               </p>
 
               <p className="mt-6 text-base leading-relaxed text-black/80 sm:text-lg">
-                Där lägger vi upp evenemang för när vi har öppet. Det{" "}
+                <strong>Kolla därför alltid de aktuella öppettiderna på</strong>{" "}
                 <br className="hidden md:block" />
-                händer även att vi håller öppet vid andra tider och dagar,{" "}
+                <strong>förstasidan innan du besöker oss.</strong>{" "}
                 <br className="hidden md:block" />
-                det postar vi också på våran förstasida.
               </p>
 
               {/* <a
@@ -170,3 +169,49 @@ export default About
 
 
 
+
+
+
+
+
+            // <div id="hitta-till-oss" className="mt-4 scroll-mt-16 pt-12">
+            //   <div className="mb-12 w-[82%] border-t border-black/20"></div>
+
+            //   <h2 className="text-[clamp(2.5rem,10vw,3.75rem)] font-black uppercase leading-none tracking-tight">
+            //     Hitta till oss
+            //   </h2>
+
+            //   <p className="mt-8 text-base leading-relaxed text-black/80 sm:text-lg">
+            //     Vår verkstad finns på Augustenborgsgatan 24E, Malmö.
+            //     <br className="hidden md:block" /> Här hittar du en karta till oss.
+            //   </p>
+
+            //   <a
+            //     href="https://maps.app.goo.gl/Q1wMd8ZAAiH8kkmN6"
+            //     target="_blank"
+            //     rel="noopener noreferrer"
+            //     className="mt-6 inline-block rounded-xl border-2 border-black px-7 py-4 font-black uppercase transition duration-300 hover:bg-black hover:text-white"
+            //   >
+            //     Öppna karta
+            //   </a>
+
+            //   <p className="mt-12 text-base leading-relaxed text-black/80 sm:text-lg">
+            //     Vi har öppet på <strong>Måndagar</strong> och{" "}
+            //     <strong>Onsdagar</strong> mellan 17–20.
+            //   </p>
+
+            //   <p className="mt-12 text-base leading-relaxed text-black/80 sm:text-lg">
+            //     Men ibland är vi sjuka, upptagna med annat eller öppnar{" "}
+            //     <br className="hidden md:block" />
+            //     lite senare. Så ta alltid en titt på våra öppettider på{" "}
+            //     <br className="hidden md:block" />
+            //     förstasidan innan du besöker oss.
+            //   </p>
+
+            //   <p className="mt-6 text-base leading-relaxed text-black/80 sm:text-lg">
+            //     Där lägger vi upp evenemang för när vi har öppet. Det{" "}
+            //     <br className="hidden md:block" />
+            //     händer även att vi håller öppet vid andra tider och dagar,{" "}
+            //     <br className="hidden md:block" />
+            //     det postar vi också på våran förstasida.
+            //   </p>
