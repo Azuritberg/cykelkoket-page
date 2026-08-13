@@ -22,7 +22,3 @@ Projektet använder bland annat:
 - Google Kalender / iCal
 - Vercel Functions
 - Resend
-
-```
-
-```
