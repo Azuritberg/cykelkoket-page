@@ -65,9 +65,9 @@ function EventCalendar() {
   return (
     <section className="relative min-h-[520px] overflow-hidden rounded-2xl bg-[var(--surface-dark)] px-6 py-8 text-white sm:px-8 sm:py-10">
       <h2 className="text-[2.5rem] font-black uppercase leading-none sm:text-[3.2rem]">
-        Nyheter
-        <span className="mx-3 text-white">|</span>
-        <span className="text-[var(--lime)]">Event</span>
+        <span>Nyheter</span> 
+        <span className="ml-3 text-white">|</span>
+        <span className="block text-[var(--lime)] md:ml-3 md:inline">Event</span>
       </h2>
 
       <div className="relative mt-8">
