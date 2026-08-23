@@ -22,7 +22,29 @@ function Header({ lightText = false, whiteLogo = false }) {
         />
       )}
 
+
       <Link
+        to="/"
+        onClick={(event) => {
+          if (window.innerWidth < 768) {
+            event.preventDefault()
+            setMenuOpen(!menuOpen)
+          }
+        }}
+        className="relative z-50 flex flex-col items-center"
+      >
+        <img
+          src={whiteLogo ? ckLogoWhite : ckLogoBlack}
+          alt="Cykelköket"
+          className="h-auto w-[90px] max-w-none"
+        />
+
+        <span className="-mt-1 block w-full translate-x-[9px] text-center text-[16px] font-medium uppercase tracking-[0.70em] md:hidden">
+          MENU
+        </span>
+      </Link>
+      
+      {/* <Link
         to="/"
         onClick={(event) => {
           if (window.innerWidth < 768) {
@@ -37,7 +59,7 @@ function Header({ lightText = false, whiteLogo = false }) {
           alt="Cykelköket"
           className="w-[90px] max-w-none h-auto"
         />
-      </Link>
+      </Link> */}
 
       <nav className="hidden items-center gap-8 text-sm font-bold uppercase md:flex">
         <Link to="/om-oss">Om Cykelköket</Link>
