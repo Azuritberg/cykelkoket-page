@@ -48,7 +48,7 @@ function OpeningStatus() {
 const isOpenNow = Boolean(currentOpening)
 
   return (
-    <section className="relative min-h-[790px] w-full max-w-full min-w-0 overflow-hidden rounded-2xl bg-[var(--surface-dark)] px-6 py-8 text-[var(--text-light)] sm:px-8 sm:py-10">
+    <section className="relative min-h-[690px] w-full max-w-full min-w-0 overflow-hidden rounded-2xl bg-[var(--surface-dark)] px-6 py-8 text-[var(--text-light)] sm:px-8 sm:py-10">
       <div className="relative z-10 w-full max-w-full min-w-0">
 
         {/* STATUS HÖGST UPP */}
