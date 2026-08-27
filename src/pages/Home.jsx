@@ -38,7 +38,7 @@ function Home() {
 
 
         {/* HÖGER KOLUMN */}
-        <section className="contents lg:col-start-2 lg:row-start-1 lg:grid lg:w-full lg:min-w-0 lg:grid-cols-1 lg:gap-3 lg:overflow-hidden">
+        <section className="contents lg:col-start-2 lg:row-start-1 lg:grid lg:w-full lg:min-w-0 lg:self-start lg:content-start lg:grid-cols-1 lg:gap-3 lg:overflow-hidden">
 
           {/* Öppettider */}
           <div className="order-2 min-w-0">
