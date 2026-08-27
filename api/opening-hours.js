@@ -48,9 +48,7 @@ export default async function handler(req, res) {
         title.includes("öppen") ||
         title.includes("öppet") ||
         title.includes("medlemsöppet") ||
-        title.includes("söndagsöppet") ||
-        title.includes("verkstad") ||
-        title.includes("medlemsmöte")
+        title.includes("söndagsöppet")
       )
     })
 
@@ -106,3 +104,14 @@ export default async function handler(req, res) {
 
 
 
+
+
+    //   return (
+    //     title.includes("öppen") ||
+    //     title.includes("öppet") ||
+    //     title.includes("medlemsöppet") ||
+    //     title.includes("söndagsöppet") ||
+    //     title.includes("verkstad") ||
+    //     title.includes("medlemsmöte")
+    //   )
+    // })
